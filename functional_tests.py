@@ -19,7 +19,8 @@ class NewVisitorTest(unittest.TestCase):
         self.fail('Finish writing tests')
 
         # He has the option to create a new deck, or edit an existing deck
-        
+        existing_deck = self.browser.find_element_by_id('deck1')
+        new_deck_button = self.browser.find_element_by_id('newDeck')
 
         # He creates a new deck and titles it "Test Deck 1"
 
